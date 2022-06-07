@@ -1,0 +1,17 @@
+{
+	"env": "development",
+	"host": "0.0.0.0",
+	"port": 3001,
+	"typeorm": {
+		"type": "mysql",
+		"host": "localhost",
+		"port": 3306,
+		"username": "root",
+		"password": "",
+		"database": "digital-wallet",
+		"entities": ["src/models/*.ts"],
+		"logging": false,
+		"synchronize": true
+	},
+	"etherscamApiKey": "NSZCD6S4TKVWRS13PMQFMVTNP6H7NAGHUY"
+}
