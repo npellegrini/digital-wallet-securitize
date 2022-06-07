@@ -1,6 +1,7 @@
 import bodyParser from 'body-parser';
-// import cors from 'cors';
-var cors = require('cors');
+const cors = require('cors');
+const swaggerUI = require("swagger-ui-express");
+const swaggerOptions =  require("../config/swagger.json");
 import config from 'config';
 import express from 'express';
 import { db } from './db';
@@ -9,12 +10,14 @@ import apiV1 from './routes/v1';
 
 class Server {
 	app = express();
-	port = 3000 || config.get('port');
+	port =  config.get('port') || 3000;
 
 	applyMiddlewares() {
 		this.app.use(bodyParser.json());
-		this.app.use('/v1', apiV1);
 		this.app.use( cors());
+		this.app.use('/v1', apiV1);
+		this.app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerOptions));
+		
 	}
 
 	start() {

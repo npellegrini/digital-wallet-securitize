@@ -1,7 +1,7 @@
 {
 	"env": "development",
 	"host": "0.0.0.0",
-	"port": 3001,
+	"port": 4000,
 	"typeorm": {
 		"type": "mysql",
 		"host": "localhost",
@@ -13,5 +13,21 @@
 		"logging": false,
 		"synchronize": true
 	},
-	"etherscamApiKey": "NSZCD6S4TKVWRS13PMQFMVTNP6H7NAGHUY"
+	"etherscamApiKey": "NSZCD6S4TKVWRS13PMQFMVTNP6H7NAGHUY",
+	"swaggerOptions": {
+		"definition": {
+			"openapi": "3.0.0",
+			"info": {
+				"title": "Library API",
+				"version": "1.0.0",
+				"description": "DigitalWallet API"
+			},
+			"servers": [
+				{
+					"url": "http://localhost:4000"
+				}
+			]
+		},
+		"url": "./swagger.json"
+	}
 }

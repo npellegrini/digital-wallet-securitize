@@ -25,6 +25,8 @@
 		"pg": "^7.10.0",
 		"sequelize": "^5.7.6",
 		"sequelize-fixtures": "^0.10.0",
+		"swagger-jsdoc": "^6.2.1",
+		"swagger-ui-express": "^4.4.0",
 		"typeorm": "^0.3.6"
 	},
 	"devDependencies": {
