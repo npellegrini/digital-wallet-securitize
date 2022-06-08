@@ -15,7 +15,7 @@ import { moreThan1Year } from '../../helpers/dates';
 export const Wallet = ({ wallet }: { wallet: IWallet }) => {
     const dispatch = useAppDispatch();
     const { rates } = useAppSelector(state => state.rate)
-
+    
     useEffect(() => {
 
         dispatch(getWalletBalance(wallet.address))

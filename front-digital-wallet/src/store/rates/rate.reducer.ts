@@ -15,7 +15,6 @@ export default (state = defaultState, action: RateActions): IRateState => {
     case RATE_UPDATE_BALANCE: {
 
       const newRateState = {...state.rates}
-      newRateState[action.payload.key] =action.payload.key
 
       return { rates: newRateState };
     }

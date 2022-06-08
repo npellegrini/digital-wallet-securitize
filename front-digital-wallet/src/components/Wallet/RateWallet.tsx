@@ -1,4 +1,3 @@
-import EditConfirmState, { IEditConfirmState } from "../hocs/EditConfirmState";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
 import Card from 'react-bootstrap/Card';
@@ -32,7 +31,7 @@ const RateWallet: React.FC<IWalletBalance> = ({ balance, rates }) => {
     const balanceConverted = useMemo(() => {
         const ethValue = weiToEth(balance)
         return parseFloat((ethValue * rateSelected).toFixed(2));
-    }, [rateSelected])
+    }, [rateSelected, balance])
 
     useEffect(() => {
         if (balance) {
