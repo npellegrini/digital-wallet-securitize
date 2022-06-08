@@ -40,7 +40,7 @@ All this solution was coded in a very fast way just only to show some of the pri
   on returning response object for given custom request object(`IHttpRequest`).
 
 - Data-access:
-  Instead of directly using `sequelize` model methods, `data-access` wraps those api thus \
+  Instead of directly using `typeorm` model methods, `data-access` wraps those api thus \
   provides proper abstractions over the framework.
 
 - Errors:
