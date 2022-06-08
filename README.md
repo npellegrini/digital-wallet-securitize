@@ -22,7 +22,7 @@ Front-end: was built in a way of:
 - Helpers to assist in some process.
  
 ### Side Note
-All this solution was coded in a very fast way just only to show some of the principles, best practices and architecture desicions that we can take over an application. There are a lot of things to improve, validate, make it better and add. For example the JWT securitazion in the API, the token into the frontend to use the api, cases of error handling in frontend and backend, migrations for the database etc.
+All this solution was coded in a very fast way just only to show some of the principles, best practices and architecture desicions that we can take over an application. There are a lot of things to improve, validate, make it better and add. For example the JWT securitazion in the API, the token into the frontend to use the api, cases of error handling in frontend and backend, migrations for the database, form validation, microinteraction when you add a new wallet or you set/unset a favourite wallet, sorting features, delete wallet,  etc.
 
 ## Installation
 ##### Backend:
@@ -66,3 +66,15 @@ All this solution was coded in a very fast way just only to show some of the pri
 2. yarn
 3. Configure your REACT_APP_API_URL in .env
 4. yarn start
+
+
+## App deployed
+
+
+| App | Link |
+| ------ | ------ |
+| Api Doc | [https://api.mycryptopricer.com/api-docs][api] |
+| Frontend | [https://mycryptopricer.com/][front] |
+
+   [api]: <https://api.mycryptopricer.com/api-docs>
+   [front]: <https://mycryptopricer.com>
